@@ -11,7 +11,7 @@ def binary_search(search_num, start, end):
             print(0)
             return
 
-    half = int((start + end) / 2)
+    half = (start + end) // 2
     # 인덱스 중앙값보다 비교하려는 값이 작은 경우 
     if a_list[half] > b:
         end = half - 1      # 왼쪽 파티션에 있다는 것을 확인했으니 오른쪽 파티션에 있을 수가 없으므로 왼쪽 파티션의 범위를 넣어주기 위함

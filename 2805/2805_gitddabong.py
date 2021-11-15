@@ -17,7 +17,7 @@ def binary_search(start, end):
         return
 
     # start와 end를 이용해 반값을 구하고 얘를 기준으로 나무자르기
-    half = int((start + end) / 2)
+    half = (start + end) // 2
     cost_sum = tree_cut(half)
     # 합계를 지금까지의 나무 길이의 최솟값과 비교해서 더 작으면 넣기
     # 나무 길이의 합계가 현재까지 나온 합계 중 최솟값이라면 
